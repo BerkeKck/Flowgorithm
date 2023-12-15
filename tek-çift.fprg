@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="BERKE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-07 12:24:39 &#214;S"/>
+        <attribute name="created" value="QkVSS0U7REVTS1RPUC0wS0dURzczOzIwMjMtMTItMDc7MTI6MTE6Mjggw5ZTOzI4MTU="/>
+        <attribute name="edited" value="QkVSS0U7REVTS1RPUC0wS0dURzczOzIwMjMtMTItMDc7MTI6MjQ6Mzkgw5ZTOzY7MjkzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, kalan" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="Random(100)+1"/>
+            <output expression="&quot;Bulunan Sayi:&quot; &amp;sayi" newline="True"/>
+            <assign variable="kalan" expression="sayi%2"/>
+            <if expression="kalan=0">
+                <then>
+                    <output expression="&quot;Sayi &#231;ifftir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sayi tektir&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="BERKE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-06 01:12:34 &#214;S"/>
+        <attribute name="created" value="QkVSS0U7REVTS1RPUC0wS0dURzczOzIwMjMtMTItMDY7MDE6MDI6NDcgw5ZTOzI4MTM="/>
+        <attribute name="edited" value="QkVSS0U7REVTS1RPUC0wS0dURzczOzIwMjMtMTItMDY7MDE6MTI6MzQgw5ZTOzE7MjkxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;1. sayiyi giriniz&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;2. sayiyi giriniz&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <assign variable="sonuc" expression="sayi1+sayi2"/>
+            <output expression="&quot;Sonu&#231; =&quot; &amp;sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

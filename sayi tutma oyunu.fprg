@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="BERKE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-07 02:17:59 &#214;S"/>
+        <attribute name="created" value="QkVSS0U7REVTS1RPUC0wS0dURzczOzIwMjMtMTItMDc7MTI6MzM6NDQgw5ZTOzI4MTc="/>
+        <attribute name="edited" value="QkVSS0U7REVTS1RPUC0wS0dURzczOzIwMjMtMTItMDc7MDI6MTc6NTkgw5ZTOzM7MjkzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="index, tutulanSayi, tahmin" type="Integer" array="False" size=""/>
+            <declare name="tahminDo&#287;rumu" type="Boolean" array="False" size=""/>
+            <assign variable="tahminDo&#287;rumu" expression="false"/>
+            <assign variable="tutulanSayi" expression="random(50)+1"/>
+            <assign variable="index" expression="5"/>
+            <while expression="index&gt;0 and tahminDo&#287;rumu=false">
+                <output expression="&quot;kalan deneme hakk&#305;n&#305;z:&quot; &amp;index" newline="True"/>
+                <output expression="&quot;Bir sayi giriniz&quot;" newline="True"/>
+                <input variable="tahmin"/>
+                <if expression="tahmin=tutulanSayi">
+                    <then>
+                        <output expression="&quot;Tebrikler&quot; &amp;index &amp; &quot;denemede buldunuz&quot;" newline="True"/>
+                        <assign variable="tahminDo&#287;rumu" expression="true"/>
+                    </then>
+                    <else>
+                        <if expression="tahmin&gt;tutulanSayi">
+                            <then>
+                                <output expression="&quot;Daha k&#252;&#231;&#252;k bir sayi giriniz&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Daha b&#252;y&#252;k bir sayi giriniz&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="index" expression="index-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
